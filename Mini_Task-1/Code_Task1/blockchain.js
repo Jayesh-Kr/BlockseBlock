@@ -31,7 +31,7 @@ const difficulty = 2;
 let blockchain = [];
 
 // Genesis Block
-const block0 = new Block(1, Date.now().toString(), "Genesis Block", "0");
+const block0 = new Block(1, Date.now().toString(), "Genesis Block", "0".repeat(64));
 block0.mineBlock(difficulty);
 blockchain.push(block0);
 
